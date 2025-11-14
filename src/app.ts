@@ -9,6 +9,7 @@ import profileRoutes from "./modules/profile/profile.route";
 import skillRoute from "./modules/skill/skill.route";
 import projectRoute from "./modules/project/project.route";
 import contactRoute from "./modules/contact/contact.route";
+import toolRoute from "./modules/tool/tool.route";
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use("/profile", profileRoutes);
 app.use("/skills", skillRoute);
 app.use("/projects", projectRoute);
 app.use("/contacts", contactRoute);
+app.use("/tools", toolRoute);
 
 // error handler
 app.use(errorHandler);

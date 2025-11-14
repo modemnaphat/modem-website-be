@@ -27,9 +27,14 @@ model Skill {
   id        Int      @id @default(autoincrement())
   name      String?
   iconUrl   String?
-  level     Int?
 
   projects Project[] 
+}
+
+model Tool {
+  id        Int      @id @default(autoincrement()) 
+  name      String?
+  iconUrl   String?
 }
 
 model Project {
