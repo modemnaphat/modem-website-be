@@ -11,7 +11,6 @@ export const getProject = async () => {
           id: true,
           name: true,
           iconUrl: true,
-          level: true,
         },
       },
     },
