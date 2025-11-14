@@ -10,6 +10,7 @@ import skillRoute from "./modules/skill/skill.route";
 import projectRoute from "./modules/project/project.route";
 import contactRoute from "./modules/contact/contact.route";
 import toolRoute from "./modules/tool/tool.route";
+import technicalSkillRoute from "./modules/technicalSkill/technicalSkill.route";
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use("/skills", skillRoute);
 app.use("/projects", projectRoute);
 app.use("/contacts", contactRoute);
 app.use("/tools", toolRoute);
+app.use("/tech-skills", technicalSkillRoute);
 
 // error handler
 app.use(errorHandler);
