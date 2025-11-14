@@ -2,6 +2,9 @@ import prisma from "../../db";
 
 export const getProject = async () => {
   return prisma.project.findMany({
+    orderBy: {
+      id: "asc",
+    },
     include: {
       skills: {
         select: {
@@ -9,8 +12,8 @@ export const getProject = async () => {
           name: true,
           iconUrl: true,
           level: true,
-        }
+        },
       },
-    }
+    },
   });
 };
