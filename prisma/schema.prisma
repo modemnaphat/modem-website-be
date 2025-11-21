@@ -38,9 +38,10 @@ model Tool {
 }
 
 model TechnicalSkill {
-  id        Int      @id @default(autoincrement()) 
-  name      String?
-  iconUrl   String?
+  id          Int      @id @default(autoincrement()) 
+  name        String?
+  iconUrl     String?
+  description String?
 }
 
 model Project {
